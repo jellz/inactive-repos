@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Repo [In]Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Sort repos by activity">
+  <meta property="og:site_name" content="Repo In[Activity]">
+  <meta property="og:url" content="https://repoactivity.jlz.fun">
+  <meta property="og:description" content="This site serves as a small tool to sort a user's repositories by the date of their last commit.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/repos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Repo [In]Activity</h1>
+    <p>This site serves as a small tool to sort a user's repositories by the date of their last commit.</p>
+    <div class="main">
+      <form id="main-form" class="main-form">
+        <input id="gh-username-input" class="gh-username-input" placeholder="GitHub username" required />
+        <button class="main-form-submit-button">Sort repos</button>
+      </form>
+      <div id="repo-list-wrapper">
+        <em>Least recently active at the top, most recently active at the bottom</em>
+        <ol class="list"></ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small libraries ;) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/2.3.9/cash.min.js" integrity="sha256-sgbRFu1ovLpx5RKm2jtylr21wiM8e6HkFI2JD3gZYYc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script src="https://unpkg.com/@chute/timeago"></script>
+  <script src="assets/repos.js"></script>
+</body>
+</html>

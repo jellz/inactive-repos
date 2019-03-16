@@ -1,0 +1,29 @@
+html { background-color: #eee; }
+button, input { 
+  border-radius: 4px; 
+  border: none; 
+  padding: 10px 10px 10px;
+}
+button, button:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.container { padding-left: 30%; padding-right: 30%; padding-top: 5%; }
+.option { font-weight: bold; }
+.main { padding-bottom: 5%; }
+.main-form { margin-bottom: 2.5%; }
+.form-error-text { color: red; }
+.pushed_at_humanized, .name { 
+  display: inline-block; 
+  padding: 0px;
+  margin: 0px;
+}
+.main-form-submit-button {
+  background-color: goldenrod;
+  color: whitesmoke;
+  font-weight: bold;
+  
+}
