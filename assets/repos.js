@@ -6,6 +6,7 @@ $('#main-form').on('submit', async (e) => {
   let username = $('#gh-username-input').val().trim();
   if (!USERNAME_REGEX.test(username)) return alert('Invalid username');
   let res = await fetch(`https://api.github.com/users/${username}/repos`);
+  if (res.status === 404) return alert('Invalid user');
   let json = await res.json();
   let repos = json.sort((a, b) => new Date(a.pushed_at).getTime() - new Date(b.pushed_at).getTime());
   $('.list').empty();
