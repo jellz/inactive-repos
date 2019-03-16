@@ -26,3 +26,6 @@ button, button:focus {
   color: whitesmoke;
   font-weight: bold;
 }
+.main-form-submit-button:active {
+  opacity: 0.75;
+}
