@@ -1,2 +1,2 @@
-# inactive-repos
-Sort user repositories by least active
+# repo-activity
+Sort user repositories by activity
